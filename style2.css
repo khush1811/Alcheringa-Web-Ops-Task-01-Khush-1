@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+body{
+    min-height: 100vh;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.topnav a {
+    text-decoration: none;
+}
+
+#Home {
+    float: left;
+    color: white;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+#Name {
+    float: right;
+    border: 2px solid white;
+    margin: 4px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+#newItem {
+    margin: 2px 30px;
+    /* padding-right: 10px; */
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    position: relative;
+}
+
+.side-bar{
+    background: black;
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.side-bar .active{
+    left: 0%;
+}
+
+.side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+}
+
+.side-bar .menu .item{
+    position: relative;
+    cursor: pointer;
+    background-color: rgb(33, 32, 32);
+}
+
+.side-bar .menu .item a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+
+.side-bar .menu .item a:hover{
+    background-color: rgb(59, 31, 31);
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item i{
+    margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu{
+    display: none;
+}
+
+.side-bar .menu .item .sub-menu a{
+    padding-left: 70px;
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+.close-btn{
+    position: absolute;
+    color: rgb(59, 31, 31);
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;    
+}
+
+.menu-btn{
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    margin: 25px;
+    cursor: pointer;
+}
+
+#openBtn{
+    left: 0;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+#startText{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.image{
+    width: 33vw;
+    height: 25vh;
+    /* border: 2px solid red; */
+}
+
+.image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.image p{
+    float: right;
+    font-size: 4vh;
+    padding-top: 7.8vh;
+    padding-right: 8.8vw;
+}
+
+#formTitle{
+    font-size: 4vh;
+}
+
+#exclamation{
+    border: 2px solid rgb(242, 191, 95);
+    background-color: rgb(248, 243, 235);
+    margin-top: 20px;
+    padding: 10px 1vw;
+    border-radius: 4px;
+}
+
+.table{
+    padding-top: 20px;
+}
+
+table{
+    background-color: rgb(208, 191, 191);
+}
+
+th{
+    background-color: rgb(208, 205, 205);
+    /* width: 359px; */
+    width: 27.9vw;
+    height: 40px;
+    font-size: 20px;
+}
+
+td{
+    height: 40px;
+    padding-left: 8px;
+}
+
+.odd{
+    background-color: rgb(240, 239, 239);
+}
+
+.even{
+    background-color: white;
+}
+
+#editBtn{
+    margin-left: 4px;
+    margin-right: 16px;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+#delBtn{
+    background-color: rgb(188, 138, 45);
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 4px;
+    padding: 4px;
+}
+
+.table .button{
+    /* width: 150px; */
+    width: 12vw;
+}

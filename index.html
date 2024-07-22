@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" charset="utf-8"></script>
+    <script src="sideNav2.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="" id="Home"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="" id="Name">Khush Kothawala</a>
+    </div>
+    <span onclick="openNav()" id="openBtn"><i class="fas fa-bars"></i></span>
+    <div class="side-bar" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="menu">
+            <div class="item">
+                <a href="#" id="newItem">+ New Item</a>
+            </div>
+            <div class="item">
+                <a class="sub-btn"><i class="fas fa-th"></i>Dashboard<i
+                        class="fas fa-angle-right dropdown rotate"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">Commerce</a>
+                    <a href="#" class="sub-item">Analytics</a>
+                    <a href="#" class="sub-item">Crypto</a>
+                    <a href="#" class="sub-item">Helpdesk</a>
+                    <a href="#" class="sub-item">Monitoring</a>
+                    <a href="#" class="sub-item">Fitness</a>
+                </div>
+            </div>
+            <div class="item">
+                <a class="sub-btn"><i class="fas fa-th"></i>Application<i
+                        class="fas fa-angle-right dropdown rotate"></i></a>
+                <div class="sub-menu">
+                    <a href="#" class="sub-item">My Application 1</a>
+                    <a href="#" class="sub-item">My Application 2</a>
+                    <a href="#" class="sub-item">My Application 3</a>
+                </div>
+            </div>
+            <div class="item"><a href="#"><i class="fas fa-th"></i>Elements</a></div>
+        </div>
+    </div>
+    <div id="main">
+        <p id="startText">Welcome</p>
+        <div class="image">
+            <img src="spoidermon.jpg" alt="Error 404">
+            <p>Khush Kothawala</p>
+        </div>
+        <div class="form">
+            <p id="formTitle"><b>Form title</b></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quia id culpa aliquam enim modi.</p>
+            <p id="exclamation"><i class="fas fa-info-circle"></i> Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Officia nemo ullam perspiciatis?</p>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Fullname</th>
+                    <th>Username</th>
+                    <th>E-mail</th>
+                    <th class="button">Options</th>
+                </tr>
+                <tr class="even">
+                    <td>Emily Johnson Smith</td>
+                    <td>emilys</td>
+                    <td>emily.johnson@x.dummyjson.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i><button id="editBtn">Edit</button><i
+                            class="fa-solid fa-trash"></i><button id="delBtn">Delete</button></td>
+                </tr>
+                <tr class="odd">
+                    <td>Michael Williams</td>
+                    <td>michaelw</td>
+                    <td>michael.williams@x.dummyjson.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i><button id="editBtn">Edit</button><i
+                            class="fa-solid fa-trash"></i><button id="delBtn">Delete</button></td>
+                </tr>
+                <tr class="even">
+                    <td>Sophia Brown</td>
+                    <td>sophiab</td>
+                    <td>sophia.brown@x.dummyjson.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i><button id="editBtn">Edit</button><i
+                            class="fa-solid fa-trash"></i><button id="delBtn">Delete</button></td>
+                </tr>
+                <tr class="odd">
+                    <td>James Davis</td>
+                    <td>jamesd</td>
+                    <td>james.davis@x.dummyjson.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i><button id="editBtn">Edit</button><i
+                            class="fa-solid fa-trash"></i><button id="delBtn">Delete</button></td>
+                </tr>
+                <tr class="even">
+                    <td>Emma miller Johnson</td>
+                    <td>emmaj</td>
+                    <td>emma.miller@x.dummyjson.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i><button id="editBtn">Edit</button><i
+                            class="fa-solid fa-trash"></i><button id="delBtn">Delete</button></td>
+                </tr>
+                <tr class="odd">
+                    <td>Olivia Wilson</td>
+                    <td>oliviaw</td>
+                    <td>olivia.wilson@x.dummyjson.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i><button id="editBtn">Edit</button><i
+                            class="fa-solid fa-trash"></i><button id="delBtn">Delete</button></td>
+                </tr>
+                <tr class="even">
+                    <td>Alexander Jones</td>
+                    <td>alexanderj</td>
+                    <td>alexander.jones@x.dummyjson.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i><button id="editBtn">Edit</button><i
+                            class="fa-solid fa-trash"></i><button id="delBtn">Delete</button></td>
+                </tr>
+                <tr class="odd">
+                    <td>Ava Taylor</td>
+                    <td>avat</td>
+                    <td>ava.taylor@x.dummyjson.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i><button id="editBtn">Edit</button><i
+                            class="fa-solid fa-trash"></i><button id="delBtn">Delete</button></td>
+                </tr>
+                <tr class="even">
+                    <td>Ethan Martinez</td>
+                    <td>ethanm</td>
+                    <td>ethan.martinez@x.dummyjson.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i><button id="editBtn">Edit</button><i
+                            class="fa-solid fa-trash"></i><button id="delBtn">Delete</button></td>
+                </tr>
+                <tr class="odd">
+                    <td>Isabella Anderson Davis</td>
+                    <td>isabellad</td>
+                    <td>isabella.anderson@x.dummyjson.com</td>
+                    <td><i class="fa-regular fa-pen-to-square"></i><button id="editBtn">Edit</button><i
+                            class="fa-solid fa-trash"></i><button id="delBtn">Delete</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
